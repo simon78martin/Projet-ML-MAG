@@ -1,0 +1,25 @@
+bienvenu dans le projet
+shaking of the ground: ‘earthquake ground motion’ ==> dynamic loads on structures
+develop a ML or statistical model to estimate the collapse capacity without having to perform expensive numerical computations on the cluster.
+Data: collapse capacities of a 4-story steel structure for a large database of ground motions from past earthquakes
+different  buildings  respond 
+differently  to  a  given  ground  motion
+Fundamental period: basic dynamic property of a building.
+Ground  motions  are  recorded  as time  series  representing  the  acceleration  of  the  ground shaking as a function of time, which is called a seismogram and is typically indicated as ag(standing for acceleration of the ground).
+PGA describes the absolute peak acceleration observed in a seismogram, in terms of g, horizontally. 
+
+spectral accelerations can be thought of as an extension of the PGA concept in a way that  takes  into  account  the  period  T  of  the  case  study  structure.  In  other  words,  they describe accelerations that structures with different periods will experience when excited by the same ground motion
+
+the collapse capacity of a structure is the value of the smallest spectral acceleration of a ground motion at the fundamental period of the structure which will  cause  the  structure  to  collapse.  The  collapse  capacity  is  typically  indicated  as Sa(T1)@collapse. 
+
+DATA: metadata on ground mo0on intensity measures for about 17,000 past earthquakes recorded around the world.
+- Spectral accelerations, Sa(T), computed at 105 different periods ranging from 0.01s up to 10s
+- Average  spectral  accelerations,  Saavg,  in g.  As  the  name  implies,  this  IM  was computed  by  averaging  the Sa(T)  values  over  an  appropriately  selected  period  range (depending on the structure).
+- Two  different  measures  of  ground  motion  durations  (da5_75  and  da5_95)  in  units  of seconds.
+
+PROJECT DESCRIPTION
+You  are  provided  with  a  set  of  preditive  features  (earthquake  ground  motion  intensity measures,  IMs)  and  the  associated  responses  (collapse  capacities  of  a  4-story  steel structure). Figure out the relationship between these values so as to be able to predict the response given previously unseen inputs.
+* What  is  your  suggested  way  of  addressing  this  problem?  That  is,  which  type  of  an approach would you use?
+* What do the features of the dataset look like? How can you pre-process this data?
+* Do  the  trends  in  the  data  make  sense  in  your  opinion  and  given  your  current understanding of the effect of earthquakes on the structures? For instance, what does your intuition tell you the effect of ground motion duration (i.e. how long the earthquake shaking lasts) would be on the collapse capacity of the ground motion?
+* Which ML techniques did you try? Which of them worked the best, and why do you think this is the case?
